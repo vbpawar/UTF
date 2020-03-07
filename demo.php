@@ -22,7 +22,7 @@ $html = '<table class="table">
         <td>v</td>
     </tr>
     <tr>
-        <td><label> योजना का नाम : <span>*</span></label></td>
+        <td><label> योजना का नाम : <span>विकास पवार</span></label></td>
         <td></td>
     </tr>
     </table>';
@@ -33,7 +33,7 @@ $mpdf->WriteHTML($stylesheet, 1);
 $mpdf->WriteHTML($html);
 
 //call watermark content aand image
-$mpdf->SetWatermarkText('made by vikas');
+$mpdf->SetWatermarkText('praxello');
 $mpdf->showWatermarkText = true;
 $mpdf->watermarkTextAlpha = 0.1;
 $mpdf->Output("phpflow.pdf", 'F');
